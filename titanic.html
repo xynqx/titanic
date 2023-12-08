@@ -9,14 +9,14 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
-            background-color: #001f3f; /* Deep sea color */
-            color: #ffffff; /* White text color */
+            background-color: #001f3f; 
+            color: #ffffff; 
         }
         h1, h2, p {
             margin-bottom: 10px;
         }
         h1, h2 {
-            color: #ffcc00; /* Strong yellow color for titles */
+            color: #ffcc00;
         }
         #container {
             display: flex;
@@ -27,14 +27,14 @@
         #text-container {
             flex: 1;
             text-align: left;
-            padding: 0 20px; /* Add padding for better separation */
+            padding: 0 20px; 
         }
         #pillar-left,
         #pillar-right {
-            width: 0; /* Initially set to 0 width */
+            width: 0; 
             overflow: hidden;
-            background-color: #001f3f; /* Deep sea color for pillars */
-            transition: width 0.5s ease; /* Transition effect for smooth appearance */
+            background-color: #001f3f; 
+            transition: width 0.5s ease; 
         }
         #pillar-left img,
         #pillar-right img {
@@ -43,9 +43,9 @@
             object-fit: cover;
         }
         select {
-            color: #001f3f; /* Deep sea color for select text */
-            background-color: #ffffff; /* White background for select */
-            border: 1px solid #001f3f; /* Deep sea color border for select */
+            color: #001f3f; 
+            background-color: #ffffff; 
+            border: 1px solid #001f3f; 
             padding: 5px;
             margin-top: 10px;
         }
@@ -53,7 +53,7 @@
 </head>
 <body>
 
-<!-- Language Selector -->
+
 <div>
     <label for="language">Select Language:</label>
     <select id="language" onchange="changeLanguage()">
@@ -62,19 +62,19 @@
     </select>
 </div>
 
-<!-- Container for Text and Pillars -->
+
 <div id="container">
-    <!-- Pillars with Images -->
+    
     <div id="pillar-left">
         <img src="https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_FMjpg_UX1000_.jpg" alt="Image of the Titanic">
     </div>
     
-    <!-- Text Container -->
+    
     <section id="text-container">
-        <!-- Content will be dynamically populated here using JavaScript -->
+    
     </section>
 
-    <!-- Pillar with Image -->
+    
     <div id="pillar-right">
         <img src="https://media.npr.org/assets/img/2012/03/29/titanic_custom-fc6a03aedd8e562d780ecf9b9a8a947d4dcbf163-s1100-c50.jpg" alt="Image of the Titanic">
     </div>
@@ -125,7 +125,7 @@
             `;
         }
 
-        // Adjust pillar width when text changes
+        
         pillarLeft.style.width = "25%";
         pillarRight.style.width = "25%";
     }
